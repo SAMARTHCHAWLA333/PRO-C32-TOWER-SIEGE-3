@@ -3,7 +3,9 @@ const World= Matter.World;
 const Bodies = Matter.Bodies;
 
 var engine, world;
+var block1;
 var backgroundImg,platform;
+var polygon;
 var score;
 
 function preload() {
@@ -20,33 +22,24 @@ function setup(){
 
     ground = new Ground(600,height,1200,20);
    
-    block1 = new Block();
-    block2 = new Block();
-    block3 = new Block();
-    block4 = new Block();
-    block5 = new Block();
-    block6 = new Block();
-    block7 = new Block();
-    block8 = new Block();
-    block9 = new Block();
-    block10 = new Block();
-    block11 = new Block();
-    block12 = new Block();
-    block13 = new Block();
-    block14 = new Block();
-    block15 = new Block();
-    block16 = new Block();
-    block17 = new Block();
-    block18 = new Block();
-    block19 = new Block();
-    block20 = new Block();
-    block21 = new Block();
-    block22 = new Block();
-    block23 = new Block();
-    block24 = new Block();
-    block25 = new Block();
-    block26 = new Block();
-    block27 = new Block();
+    block1 = new Block(330,235,50,50);
+    block2 = new Block(360,235,50,50);
+    block3 = new Block(390,235,50,50);
+    block4 = new Block(420,235,50,50);
+    block5 = new Block(450,235,50,50);
+    block6 = new Block(360,195,50,50);
+    block7 = new Block(390,195,50,50);
+    block8 = new Block(420,195,50,50);
+    block9 = new Block(390,155,50,50);
+    block10 = new Block(930,235,50,50);
+    block11 = new Block(960,235,50,50);
+    block12 = new Block(990,235,50,50);
+    block13 = new Block(1020,235,50,50);
+    block14 = new Block(1050,235,50,50);
+    block15 = new Block(960,195,50,50);
+    block16 = new Block(990,195,50,50);
+    block17 = new Block(1020,195,50,50);
+    block18 = new Block(990,155,50,50);
     slingshot = new Slingshot(bird.body,{x:200 , y:50});
     polygon = new Polygon();
     
@@ -75,15 +68,6 @@ function draw(){
     block16.display();
     block17.display();
     block18.display();
-    block19.display();
-    block20.display();
-    block21.display();
-    block22.display();
-    block23.display();
-    block24.display();
-    block25.display();
-    block26.display();
-    block27.display();
     text.display();
 }
 
